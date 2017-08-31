@@ -1,13 +1,10 @@
 var isEnabled = true;
-var maxTabs = 20;
+var maxTabs = 30;
 var tabsCount;
 
 function updateBadgeText() {
-    var tabsBalance = maxTabs - tabsCount;
-    var tabsAllowanceRemaining = (tabsBalance > 0) ? tabsBalance : 0;
-
     chrome.browserAction.setBadgeText({
-        text: "" + tabsAllowanceRemaining
+        text: "" + tabsCount + "/" + maxTabs
     });
 }
 
