@@ -1,4 +1,4 @@
-# <img src="https://raw.githubusercontent.com/niladam/tab-limiter/master/icons/tab_128.png" width="50px"> Tab Limiter
+# <img src="https://raw.githubusercontent.com/niladam/tab-limiter/master/icons/tab_50.png"> Tab Limiter
 
 #### A Chrome Extension that limits the number of open, non-pinned tabs to a specified value
 
