@@ -8,9 +8,9 @@ This is an improved version of it, modified to suit my needs and offer some indi
 
 The indicators look like this:
 
-<div style="background:#13B618">if the number of tabs is within a margin of 25% to 50%</div>
-<div style="background:#E77714">if the number of tabs is within a margin of 50% to 75%</div>
-<div style="background:#13B618">if the number of tabs is within a margin of 75% to 100%</div>
+- ![#13B618](https://placehold.it/17/13B618/ffffff?text=+) `if the number of tabs is within a margin of 25% to 50%`
+- ![#E77714](https://placehold.it/17/E77714/ffffff?text=+) `if the number of tabs is within a margin of 50% to 75%`
+- ![#CD482C](https://placehold.it/17/CD482C/ffffff?text=+) `if the number of tabs is within a margin of 75% to 100%`
 
 ## Installation
 
