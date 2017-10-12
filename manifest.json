@@ -1,9 +1,9 @@
 {
     "name": "Tab limiter",
     "short_name": "Tab Limiter",
-    "description": "Limit the number of open, non-pinned browser tabs and deny new ones if the limit has been hit",
+    "description": "Limit the number of open, non-pinned browser tabs and deny new ones if the limit has been hit. This is a fork from Nicolas Gallagher's original version.",
     "author": "Nicolas Gallagher (https://github.com/necolas), Madalin Tache (https://github.com/niladam)",
-    "version": "1.0",
+    "version": "1.0.1",
     "background": {
         "scripts": [
             "background.js"
@@ -26,6 +26,7 @@
     },
     "options_ui": {
       "page": "options.html",
+      // "open_in_tab": true
       "chrome_style": true
     },
     "manifest_version": 2
