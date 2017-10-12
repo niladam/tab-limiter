@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tab Limit</title>
+<style>
+body {
+    padding-bottom: 36px;
+}
+p {
+    line-height: normal;
+}
+input[ui~="wide"] {
+    width: 280px;
+}
+:-webkit-any(#form, #actions) button {
+    margin-left: 10px;
+}
+:-webkit-any(#form, #actions) button:first-child {
+    margin-left: 0;
+}
+#domains {
+    padding: 0;
+}
+#domains li {
+    margin-bottom: 5px;
+    list-style: none;
+}
+.fixed {
+    opacity: .5;
+}
+#form .remove {
+    display: inline-block;
+    padding: 0;
+    min-width: 28px;
+    min-height: 28px;
+    width: 28px;
+    height: 28px;
+    font-size: 22px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+    transform-origin: 50% 50%;
+    transform: scale(0.5);
+    vertical-align: middle;
+    color: #727272;
+}
+#form .remove:hover {
+    background: #727272;
+    border: none;
+    border-radius: 50%;
+    box-shadow: none;
+    color: #fff;
+}
+#actions {
+    display: flex;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 14px 17px;
+    background: #fff;
+}
+#message {
+    flex-grow: 1;
+    padding-left: 5px;
+    color: #666;
+    line-height: 24px;
+}
+.aux {
+    color: #999;
+}
+#save:not(:focus) {
+    border-color: rgba(0, 0, 0, 0.5);
+}
+</style>
+</head>
+<body>
+<section id="form">
+    <h3>Choose a tab limit</h3>
+    <section>
+        <p><input type="number" id="limit" placeholder="Limit open tabs to"> <span class="aux">(<code>20</code> tabs by default)</span></p>
+        <p>Deny new tabs if limit is reached ? <input type="checkbox" id="deny"> <span class="aux">(Enabled by default)</span></p>
+        <div id="status"></div>
+        <button id="save">Save</button>
+    </section>
+</section>
+<script src="js/options.js"></script>
+</body>
+</html>
